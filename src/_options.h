@@ -117,5 +117,7 @@ static ZoneEntry Zones[] = {
     ZoneEntry(0, 727, "templeofosse", "Temple of Osse", 5868, 4, 0, 0, 0),
     ZoneEntry(0, 726, "alqualonde", "Alqualonde", 5867, 4, 0, 0, 0),
     ZoneEntry(0, 725, "yavanna", "Pastures of Yavanna", 5866, 4, 0, 0, 0),
+    ZoneEntry(0, 378, "lorien", "The Gardens of Lorien", 105, 4, 0, 0, 0),
+    ZoneEntry(0, 379, "yavannashrine", "Shrine of Yavanna", 106, 4, 0, 0, 0),
 };
 #endif
