@@ -33,7 +33,7 @@ bool isHeroicDisabled = false;
 bool isMaxHPFixEnabled = false;
 
 // isPatchmeDisabled if set to true will let you double click eqgame.exe and not get the "Please run EverQuest" message, will start properly
-bool isPatchmeDisabled = false;
+bool isPatchmeDisabled = true;
 
 // isFoodDrinkSpamDisabled if set to true will stop you are hungry/thirsty messages to display on client. If server side isn't disabled, you can still get negative effects.
 bool isFoodDrinkSpamDisabled = false;
@@ -47,14 +47,14 @@ bool isSpellDataCRCEnabled = false;
 // isCombatDamageDoubleAppliedFixEnabled if set to true fixes a bug in rof2 where combat damage applied to client state is applied twice.
 // it is the main cause of players falling unconsious while the server still thinks they're alive
 // also can help with bouncing healthbar issues
-bool isCombatDamageDoubleAppliedFixEnabled = false;
+bool isCombatDamageDoubleAppliedFixEnabled = true;
 
 // isChecksumFixEnabled if set to true will override the normal checksum logic, if your server is not supporting checksums, can be left false
 bool isChecksumFixEnabled = false;
 
 // isOldModelHorseSupportEnabled if set to true enables horses while using old models
 // quality of life for those that don't enjoy Luclin models but want their benefits
-bool isOldModelHorseSupportEnabled = false;
+bool isOldModelHorseSupportEnabled = true;
 
 // isReportHardwareAddressEnabled if set to true will inspect mac addresses and send a more informative context of where EQ is running. 
 // This requires custom server side code that is not in eqemu master branch, and in majority of cases can be left false
@@ -105,10 +105,17 @@ static AnimationEntry CustomAnimations[] = {
 // ***** ZONE *******
 
 // areCustomZonesEnabled if set to true will allow custom zones defined in Zones[] to be injected in game (or replaced)
-bool areCustomZonesEnabled = false;
+bool areCustomZonesEnabled = true;
 
 static ZoneEntry Zones[] = {
     // zoneType, zoneID, zoneShortName, zoneLongName, eqStrID, zoneFlags2, x, y, z
-    ZoneEntry(0, 787, "hollows", "Darkened Hollows", 35154, 4, 0, 0, 0),
+    ZoneEntry(0, 758, "corruptedtree", "The Corrupted Tree", 5890, 4, 0, 0, 0),
+    ZoneEntry(0, 760, "hallsofmandos", "Halls of Mandos", 5887, 4, 0, 0, 0),
+    ZoneEntry(0, 732, "valmar", "Valmar, City of Bells", 5873, 4, 0, 0, 0),
+    ZoneEntry(0, 729, "tirion", "Tirion", 5870, 4, 0, 0, 0),
+    ZoneEntry(0, 728, "woodsoforome", "Woods of Orome", 5869, 4, 0, 0, 0),
+    ZoneEntry(0, 727, "templeofosse", "Temple of Osse", 5868, 4, 0, 0, 0),
+    ZoneEntry(0, 726, "alqualonde", "Alqualonde", 5867, 4, 0, 0, 0),
+    ZoneEntry(0, 725, "yavanna", "Pastures of Yavanna", 5866, 4, 0, 0, 0),
 };
 #endif
